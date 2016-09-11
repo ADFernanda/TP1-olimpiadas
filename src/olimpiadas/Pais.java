@@ -1,17 +1,15 @@
 package olimpiadas;
 
-public abstract class Esporte {
-	
+public class Pais {
+
 	private int id;
 	private String nome;
 	
-	public Esporte(int id, String nome){
+	public Pais(int id, String nome){
 		this.setId(id);
 		this.setNome(nome);
 	}
 
-	public abstract double calculaPontuacao();
-	
 	public int getId() {
 		return id;
 	}
