@@ -17,8 +17,7 @@ public class AtletaCorrida extends Atleta{
 	public void setPontuacao(){
 		if(Math.min(tempo1, tempo2) == tempo1 && Math.min(tempo1, tempo3) == tempo1 ){
 			super.pontuacao = tempo1;
-		}
-		if(Math.min(tempo2, tempo1) == tempo2 && Math.min(tempo2, tempo3) == tempo2 ){
+		}else if(Math.min(tempo2, tempo1) == tempo2 && Math.min(tempo2, tempo3) == tempo2 ){
 			super.pontuacao = tempo2;
 		}
 		else{

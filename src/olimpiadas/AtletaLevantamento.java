@@ -17,22 +17,9 @@ public class AtletaLevantamento extends Atleta  {
 	}
 	
 	@Override
-	public void setPontuacao(){
-		if(Math.min(peso1, peso2) == peso1 && Math.min(peso1, peso3) == peso1 && Math.min(peso1, peso4) == peso1 && Math.min(peso1, peso5) == peso1){
-			super.pontuacao = peso1;
-		}
-		if(Math.min(peso2, peso1) == peso2 && Math.min(peso2, peso3) == peso2 && Math.min(peso2, peso4) == peso2 && Math.min(peso2, peso5) == peso2){
-			super.pontuacao = peso2;
-		}
-		if(Math.min(peso3, peso2) == peso3 && Math.min(peso3, peso1) == peso3 && Math.min(peso3, peso4) == peso3 && Math.min(peso3, peso5) == peso3){
-			super.pontuacao = peso3;
-		}
-		if(Math.min(peso4, peso2) == peso4 && Math.min(peso4, peso3) == peso4 && Math.min(peso4, peso1) == peso4 && Math.min(peso4, peso5) == peso4){
-			super.pontuacao = peso4;
-		}
-		else{
-			super.pontuacao = peso5;
-		}
+	public void setPontuacao(){		
+			super.pontuacao = peso1 + peso2 + peso3 + peso4 + peso5;
+		
 	}
 
 	public int getIdCorrida() {

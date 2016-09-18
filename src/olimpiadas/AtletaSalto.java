@@ -20,13 +20,13 @@ public class AtletaSalto extends Atleta {
 		if(Math.max(altura1, altura2) == altura1 && Math.max(altura1, altura3) == altura1 && Math.max(altura1, altura4) == altura1 && Math.max(altura1, altura5) == altura1){
 			super.pontuacao = altura1;
 		}
-		if(Math.max(altura2, altura1) == altura2 && Math.max(altura2, altura3) == altura2 && Math.max(altura2, altura4) == altura2 && Math.max(altura2, altura5) == altura2){
+		else if(Math.max(altura2, altura1) == altura2 && Math.max(altura2, altura3) == altura2 && Math.max(altura2, altura4) == altura2 && Math.max(altura2, altura5) == altura2){
 			super.pontuacao = altura2;
 		}
-		if(Math.max(altura3, altura2) == altura3 && Math.max(altura3, altura1) == altura3 && Math.max(altura3, altura4) == altura3 && Math.max(altura3, altura5) == altura3){
+		else if(Math.max(altura3, altura2) == altura3 && Math.max(altura3, altura1) == altura3 && Math.max(altura3, altura4) == altura3 && Math.max(altura3, altura5) == altura3){
 			super.pontuacao = altura3;
 		}
-		if(Math.max(altura4, altura2) == altura4 && Math.max(altura4, altura3) == altura4 && Math.max(altura4, altura1) == altura4 && Math.max(altura4, altura5) == altura4){
+		else if(Math.max(altura4, altura2) == altura4 && Math.max(altura4, altura3) == altura4 && Math.max(altura4, altura1) == altura4 && Math.max(altura4, altura5) == altura4){
 			super.pontuacao = altura4;
 		}
 		else{
