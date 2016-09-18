@@ -1,6 +1,6 @@
 package olimpiadas;
 
-public abstract class Atleta implements  Comparable<Atleta>{
+public abstract class Atleta implements Comparable<Atleta>{
 
 	private int id=0;
 	private String nome;
@@ -53,5 +53,9 @@ public abstract class Atleta implements  Comparable<Atleta>{
 	     }
 	     return 0;
 	}
+	
+	
 
 }
+
+

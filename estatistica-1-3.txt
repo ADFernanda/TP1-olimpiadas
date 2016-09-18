@@ -1,6 +1,6 @@
 Levantameto de peso
 
-Maxim       1072,00
 Alexei      1072,00
+Maxim       1072,00
 Albert      1068,00
 Blake       1061,00

@@ -3,5 +3,5 @@ Salto em altura
 Christopher 2,07
 Nikolay     2,06
 Jeffrey     2,05
-Marcos      2,04
 Antonio     2,04
+Marcos      2,04

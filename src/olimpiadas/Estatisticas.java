@@ -246,7 +246,10 @@ public class Estatisticas {
 						
 					}
 					
+					PaisComparator comparator = new  PaisComparator();
+					Collections.sort(listaPaises, comparator);
 					
+					Collections.sort(listaPaises, comparator);
 					Collections.sort(listaPaises);
 					
 					arqSaida = "estatistica-2.txt";
