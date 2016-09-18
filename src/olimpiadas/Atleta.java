@@ -1,10 +1,11 @@
 package olimpiadas;
 
-public abstract class Atleta {
+public abstract class Atleta implements  Comparable<Atleta>{
 
 	private int id=0;
 	private String nome;
 	private Pais meuPais;
+	protected double pontuacao=0;
 	
 	public Atleta(int id, String nome, Pais meuPais){
 		this.setId(id);
@@ -12,7 +13,7 @@ public abstract class Atleta {
 		this.setMeuPais(meuPais);
 	}
 
-	public abstract void setPontuacao();
+	protected abstract void setPontuacao();
 	
 	public String getNome() {
 		return nome;
@@ -37,6 +38,20 @@ public abstract class Atleta {
 	public void setMeuPais(Pais meuPais) {
 		this.meuPais = meuPais;
 	}
+	
+	public double getPontuacao() {
+		return this.pontuacao;
+	}
 
+	@Override
+	public int compareTo(Atleta outroAtleta) {
+	     if (this.pontuacao < outroAtleta.getPontuacao()) {
+	          return -1;
+	     }
+	     if (this.pontuacao > outroAtleta.getPontuacao()) {
+	          return 1;
+	     }
+	     return 0;
+	}
 
 }
